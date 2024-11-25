@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Content Hider",
+  "version": "1.0",
+  "description": "Hides elements containing specific words",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "content-hider@example.com"
+    }
+  }
+}
