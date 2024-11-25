@@ -73,6 +73,7 @@ function hideElements() {
 		'damaged',
 		'damages',
 		'damaging',
+	    	'dead',
 		'deadly',
 		'decapitate',
 		'decapitated',
