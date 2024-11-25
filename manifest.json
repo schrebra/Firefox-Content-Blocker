@@ -1,20 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Content Hider",
+  "name": "Content Blocker",
   "version": "1.0",
-  "description": "Hides elements containing specific words",
+  "description": "Hides specified content from web pages",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "<all_urls>"
   ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["words.js", "content-script.js"]
     }
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "content-hider@example.com"
-    }
-  }
+  ]
 }
