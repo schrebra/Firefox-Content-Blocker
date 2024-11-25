@@ -31,8 +31,9 @@ This Firefox extension automatically filters and hides sensitive content from we
 ```
 firefox-content-filter/
 ├── manifest.json
-├── content.js
-└── [other extension files]
+├── content-script.js
+└── words.js
+
 ```
 
 ## Configuration
